@@ -436,7 +436,7 @@ export default function AppsPage() {
           NAVBAR
       ===================================================== */}
 
-      <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f8f8f5]/90 backdrop-blur-xl">
+      <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f8f8f5]/90 backdrop-blur-sm md:backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
           <Link
             href="/"
@@ -577,7 +577,7 @@ export default function AppsPage() {
       ===================================================== */}
 
       <section className="relative border-b border-black/10">
-        <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-yellow-300/25 blur-3xl" />
+        <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-yellow-300/25 blur-sm md:blur-3xl" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-5 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
           {/* TEXT */}
@@ -656,7 +656,7 @@ export default function AppsPage() {
           {/* PHONES */}
 
           <div className="relative min-h-[500px]">
-            <div className="absolute inset-0 rounded-full bg-yellow-300/20 blur-3xl" />
+            <div className="absolute inset-0 rounded-full bg-yellow-300/20 blur-sm md:blur-3xl" />
 
             <div className="relative flex items-center justify-center">
               <div className="absolute -right-2 top-16 z-10 hidden md:block">
@@ -969,7 +969,7 @@ export default function AppsPage() {
 
             <div className="flex justify-center">
               <div className="relative">
-                <div className="absolute -inset-10 rounded-full bg-yellow-300/25 blur-3xl" />
+                <div className="absolute -inset-10 rounded-full bg-yellow-300/25 blur-sm md:blur-3xl" />
 
                 <div className="relative">
                   <PhoneFrame type="service" />

@@ -330,7 +330,7 @@ export default function WebsitesPage() {
       className="min-h-screen overflow-hidden bg-[#f8f8f5] text-black"
     >
       {/* NAVBAR */}
-      <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f8f8f5]/90 backdrop-blur-xl">
+      <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f8f8f5]/90 backdrop-blur-sm md:backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
           <Link href="/" className="text-2xl font-black">
             STORE<span className="text-yellow-500">X</span>
@@ -435,7 +435,7 @@ export default function WebsitesPage() {
 
       {/* HERO */}
       <section className="relative border-b border-black/10">
-        <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-yellow-300/25 blur-3xl" />
+        <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-yellow-300/25 blur-sm md:blur-3xl" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-5 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
           <div>
@@ -497,7 +497,7 @@ export default function WebsitesPage() {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-5 rounded-[2rem] bg-yellow-300/20 blur-3xl" />
+            <div className="absolute -inset-5 rounded-[2rem] bg-yellow-300/20 blur-sm md:blur-3xl" />
 
             <div className="relative">
               <WebsiteMockup style="corporate" />
@@ -702,7 +702,7 @@ export default function WebsitesPage() {
           <div className="grid items-center gap-14 lg:grid-cols-2">
             <div className="order-2 lg:order-1">
               <div className="relative mx-auto max-w-md">
-                <div className="absolute -inset-5 rounded-full bg-yellow-300/20 blur-3xl" />
+                <div className="absolute -inset-5 rounded-full bg-yellow-300/20 blur-sm md:blur-3xl" />
 
                 <div className="relative rounded-[2rem] border-8 border-black bg-black p-2 shadow-2xl">
                   <div className="overflow-hidden rounded-[1.5rem] bg-white">

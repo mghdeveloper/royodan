@@ -415,7 +415,7 @@ export default function DashboardsPage() {
       className="min-h-screen overflow-hidden bg-[#f8f8f5] text-black"
     >
       {/* NAVBAR */}
-      <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f8f8f5]/90 backdrop-blur-xl">
+      <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f8f8f5]/90 backdrop-blur-sm md:backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
           <Link href="/" className="text-2xl font-black tracking-tight">
             STORE<span className="text-yellow-500">X</span>
@@ -500,7 +500,7 @@ export default function DashboardsPage() {
 
       {/* HERO */}
       <section className="relative border-b border-black/10">
-        <div className="absolute -right-40 top-20 h-80 w-80 rounded-full bg-yellow-300/30 blur-3xl" />
+        <div className="absolute -right-40 top-20 h-80 w-80 rounded-full bg-yellow-300/30 blur-sm md:blur-3xl" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
           <div>
@@ -561,7 +561,7 @@ export default function DashboardsPage() {
 
           {/* HERO DASHBOARD */}
           <div className="relative">
-            <div className="absolute -inset-4 rounded-[2rem] bg-yellow-300/20 blur-2xl" />
+            <div className="absolute -inset-4 rounded-[2rem] bg-yellow-300/20 blur-sm md:blur-2xl" />
 
             <div className="relative rounded-[2rem] border border-black/10 bg-white p-3 shadow-[0_30px_100px_rgba(0,0,0,0.12)]">
               <DashboardPreview type="saas" />

@@ -455,7 +455,7 @@ export default function AISolutionsPage() {
       {/* =========================================================
           NAVBAR
       ========================================================= */}
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur-xl">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur-sm md:backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
           <Link href="/" className="group flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-black text-yellow-400 transition-transform group-hover:rotate-6">
@@ -886,7 +886,7 @@ export default function AISolutionsPage() {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-5 rounded-[3rem] bg-yellow-400/20 blur-3xl" />
+            <div className="absolute -inset-5 rounded-[3rem] bg-yellow-400/20 blur-sm md:blur-3xl" />
 
             <div className="relative">
               <ChatMockup />
@@ -989,7 +989,7 @@ export default function AISolutionsPage() {
                 return (
                   <div
                     key={item.number}
-                    className="group rounded-[1.5rem] border border-black/10 bg-white/60 p-6 backdrop-blur transition hover:bg-white"
+                    className="group rounded-[1.5rem] border border-black/10 bg-white/60 p-6 backdrop-blur-sm transition hover:bg-white md:backdrop-blur"
                   >
                     <div className="flex gap-5">
                       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-black text-yellow-400">

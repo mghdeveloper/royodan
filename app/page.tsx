@@ -202,7 +202,7 @@ export default function HomePage() {
       ====================================================== */}
       <header className="fixed inset-x-0 top-0 z-50">
         <div className="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
-          <nav className="flex h-16 items-center justify-between rounded-2xl border border-black/10 bg-white/90 px-4 shadow-xl shadow-black/5 backdrop-blur-xl sm:px-6">
+          <nav className="flex h-16 items-center justify-between rounded-2xl border border-black/10 bg-white/90 px-4 shadow-xl shadow-black/5 backdrop-blur-sm sm:px-6 md:backdrop-blur-xl">
             {/* Logo */}
             <a href="#" className="flex items-center gap-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-black text-yellow-400 shadow-lg">
@@ -315,8 +315,8 @@ export default function HomePage() {
       ====================================================== */}
       <section className="relative isolate overflow-hidden pt-32 sm:pt-40">
         {/* Background decoration */}
-        <div className="pointer-events-none absolute -right-40 top-20 -z-10 h-[500px] w-[500px] rounded-full bg-yellow-300/30 blur-3xl" />
-        <div className="pointer-events-none absolute -left-40 top-80 -z-10 h-[400px] w-[400px] rounded-full bg-yellow-100 blur-3xl" />
+        <div className="pointer-events-none absolute -right-40 top-20 -z-10 h-[500px] w-[500px] rounded-full bg-yellow-300/30 blur-sm md:blur-3xl" />
+        <div className="pointer-events-none absolute -left-40 top-80 -z-10 h-[400px] w-[400px] rounded-full bg-yellow-100 blur-sm md:blur-3xl" />
 
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 pb-20 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:pb-28">
           {/* Hero copy */}
@@ -397,7 +397,7 @@ export default function HomePage() {
 
           {/* Hero visual */}
           <div className="relative mx-auto w-full max-w-xl">
-            <div className="absolute -inset-5 rounded-[3rem] bg-yellow-300/30 blur-3xl" />
+            <div className="absolute -inset-5 rounded-[3rem] bg-yellow-300/30 blur-sm md:blur-3xl" />
 
             <div className="relative overflow-hidden rounded-[2rem] border border-black/10 bg-zinc-950 p-3 shadow-2xl shadow-black/20 sm:p-4">
               {/* Browser top */}
@@ -614,7 +614,7 @@ export default function HomePage() {
                   key={service.title}
                   className="group relative overflow-hidden rounded-3xl border border-zinc-200 bg-white p-7 transition duration-500 hover:-translate-y-2 hover:border-black hover:shadow-2xl hover:shadow-black/10"
                 >
-                  <div className="absolute -left-12 -top-12 h-32 w-32 rounded-full bg-yellow-300/0 blur-2xl transition group-hover:bg-yellow-300/60" />
+                  <div className="absolute -left-12 -top-12 h-32 w-32 rounded-full bg-yellow-300/0 blur-sm transition group-hover:bg-yellow-300/60 md:blur-2xl" />
 
                   <div className="relative">
                     <div className="flex items-start justify-between">
@@ -812,7 +812,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="absolute bottom-6 right-6 left-6">
-                    <div className="rounded-2xl border border-black/10 bg-white/90 p-4 shadow-xl backdrop-blur">
+                    <div className="rounded-2xl border border-black/10 bg-white/90 p-4 shadow-xl backdrop-blur-sm md:backdrop-blur">
                       <div className="flex items-center justify-between">
                         <span className="text-sm font-black">
                           {project.title}
@@ -951,8 +951,8 @@ export default function HomePage() {
           AI / SPECIAL CTA
       ====================================================== */}
       <section className="relative overflow-hidden bg-yellow-400 py-24 sm:py-32">
-        <div className="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-white/30 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-orange-300/30 blur-3xl" />
+        <div className="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-white/30 blur-sm md:blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-orange-300/30 blur-sm md:blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-10 lg:grid-cols-2">

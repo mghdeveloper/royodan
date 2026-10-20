@@ -270,7 +270,7 @@ export default function StoresPage() {
 
       <header className="fixed inset-x-0 top-0 z-50">
         <div className="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
-          <nav className="flex h-16 items-center justify-between rounded-2xl border border-black/10 bg-white/90 px-4 shadow-xl shadow-black/5 backdrop-blur-xl sm:px-6">
+          <nav className="flex h-16 items-center justify-between rounded-2xl border border-black/10 bg-white/90 px-4 shadow-xl shadow-black/5 backdrop-blur-sm sm:px-6 md:backdrop-blur-xl">
             <Link href="/" className="flex items-center gap-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-black text-yellow-400">
                 <Sparkles size={20} />
@@ -458,7 +458,7 @@ export default function StoresPage() {
           {/* Hero image composition */}
 
           <div className="relative mx-auto w-full max-w-2xl">
-            <div className="absolute -inset-5 rounded-[3rem] bg-yellow-400/20 blur-3xl" />
+            <div className="absolute -inset-5 rounded-[3rem] bg-yellow-400/20 blur-sm md:blur-3xl" />
 
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900 p-3 shadow-2xl sm:p-4">
               <div className="flex h-10 items-center justify-between rounded-xl bg-black px-4">
@@ -717,18 +717,18 @@ export default function StoresPage() {
       ====================================================== */}
 
       {selectedProject && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-md">
-          <div className="relative max-h-[90vh] w-full max-w-5xl overflow-y-auto rounded-[2rem] bg-white shadow-2xl">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-2 backdrop-blur-none sm:p-4 md:backdrop-blur-md">
+          <div className="relative max-h-[calc(100dvh-1rem)] w-full max-w-5xl overflow-x-hidden overflow-y-auto overscroll-contain rounded-2xl bg-white shadow-2xl sm:max-h-[90vh] sm:rounded-[2rem]">
             <button
               onClick={() => setSelectedProject(null)}
-              className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-xl bg-black text-white transition hover:bg-yellow-400 hover:text-black"
+              className="absolute right-3 top-3 z-10 flex h-10 w-10 items-center justify-center rounded-xl bg-black text-white transition hover:bg-yellow-400 hover:text-black sm:right-4 sm:top-4"
               aria-label="إغلاق"
             >
               <X size={18} />
             </button>
 
-            <div className="grid lg:grid-cols-[1.15fr_.85fr]">
-              <div className="relative aspect-[4/3] min-h-[300px] bg-zinc-100">
+            <div className="grid min-w-0 lg:grid-cols-[1.15fr_.85fr]">
+              <div className="relative aspect-[16/10] min-w-0 bg-zinc-100 sm:aspect-[4/3] sm:min-h-[300px]">
                 <Image
                   src={selectedProject.image}
                   alt={selectedProject.title}
@@ -737,12 +737,12 @@ export default function StoresPage() {
                 />
               </div>
 
-              <div className="p-7 sm:p-10">
+              <div className="min-w-0 p-5 sm:p-8 lg:p-10">
                 <div className="mb-4 inline-flex rounded-full bg-yellow-100 px-3 py-2 text-[10px] font-black text-yellow-700">
                   {selectedProject.categoryLabel}
                 </div>
 
-                <h3 className="text-3xl font-black">
+                <h3 className="break-words text-2xl font-black sm:text-3xl">
                   {selectedProject.title}
                 </h3>
 
@@ -755,7 +755,7 @@ export default function StoresPage() {
                     النتيجة
                   </div>
 
-                  <div className="mt-2 text-lg font-black">
+                  <div className="mt-2 break-words text-lg font-black">
                     {selectedProject.result}
                   </div>
                 </div>
@@ -1067,7 +1067,7 @@ export default function StoresPage() {
             </div>
 
             <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-yellow-300/30 blur-3xl" />
+              <div className="absolute inset-0 rounded-full bg-yellow-300/30 blur-sm md:blur-3xl" />
 
               <div className="relative flex items-end justify-center gap-5">
                 {/* laptop */}
@@ -1112,7 +1112,7 @@ export default function StoresPage() {
       <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden rounded-[2rem] bg-black p-8 text-white sm:p-12">
-            <div className="absolute -right-20 -top-20 h-60 w-60 rounded-full bg-yellow-400/20 blur-3xl" />
+            <div className="absolute -right-20 -top-20 h-60 w-60 rounded-full bg-yellow-400/20 blur-sm md:blur-3xl" />
 
             <div className="relative">
               <div className="flex gap-1 text-yellow-400">

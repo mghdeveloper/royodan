@@ -609,7 +609,7 @@ export default function UIUXPage() {
           NAVBAR
       ===================================================== */}
 
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-black/[0.06] bg-white/85 backdrop-blur-xl">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-black/[0.06] bg-white/85 backdrop-blur-sm md:backdrop-blur-xl">
         <div className="mx-auto flex h-[72px] max-w-[1380px] items-center justify-between px-5 sm:px-8">
           <Link
             href="/"
@@ -1754,7 +1754,7 @@ export default function UIUXPage() {
 
       {selectedProject && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-md"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-none md:backdrop-blur-md"
           onClick={() => setSelectedProject(null)}
         >
           <div
@@ -1763,7 +1763,7 @@ export default function UIUXPage() {
           >
             <button
               onClick={() => setSelectedProject(null)}
-              className="absolute left-5 top-5 z-10 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-black shadow-lg backdrop-blur"
+              className="absolute left-5 top-5 z-10 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-black shadow-lg backdrop-blur-sm md:backdrop-blur"
               aria-label="إغلاق"
             >
               <X size={18} />
